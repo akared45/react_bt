@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .product h3 {
+            margin: 0;
+        }
+        .product p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Danh sách sản phẩm</h1>
+    <div id="product-list"></div>
+
+    <script>
+        $(document).ready(function() {
+            $.getJSON("product.json", function(data) {
+                $.each(data, function(index, product) {
+                    var productHtml = `
+                        <div class="product">
+                            <h3>${product.name}</h3>
+                            <p><strong>Giá:</strong> ${product.price}</p>
+                            <p><strong>Mô tả:</strong> ${product.description}</p>
+                        </div>
+                    `;
+                    $('#product-list').append(productHtml);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Áo sơ mi nam",
+      "price": "200,000 VND",
+      "description": "Áo sơ mi nam chất liệu cotton thoáng mát, thích hợp cho mùa hè."
+    },
+    {
+      "id": 2,
+      "name": "Quần jeans nữ",
+      "price": "350,000 VND",
+      "description": "Quần jeans nữ dáng ôm, phong cách trẻ trung và năng động."
+    },
+    {
+      "id": 3,
+      "name": "Giày thể thao",
+      "price": "800,000 VND",
+      "description": "Giày thể thao thoải mái, phù hợp cho các hoạt động thể thao và đi lại hàng ngày."
+    }
+  ]
+  
